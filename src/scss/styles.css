@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,600,700);
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700);
+@import './reset.css';
+
+@import './header.css';
+@import './footer.css';
+@import './pages.css';
+
+@import './about.css';
+@import './reviews.css';
+@import './workflow.css';
+@import './products.css';
+@import './pricing.css';
+@import './hero.css';
+@import './services.css';
+@import './contact.css';
+@import './cookies.css';
+
+:root {
+  --font-family: 'Roboto', sans-serif;
+  --second-family: 'Poppins', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  max-width: 375px;
+  min-width: 250px;
+  margin: 0 auto;
+}
+.section {
+  margin-bottom: 50px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 120px;
+  }
+}
+.title-h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ff8c00;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 56px;
+    font-size: 28px;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+  outline: 1px solid #000 !important;
+  opacity: 1 !important;
+  background-color: transparent !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+  transform: scale(1.2);
+}

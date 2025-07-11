@@ -1,0 +1,173 @@
+.workflow {
+  scroll-margin-top: 100px;
+  background: #f3fcff;
+  padding: 20px 0 40px 0;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 140px;
+    padding: 56px 0;
+  }
+}
+
+.swiper-workflow {
+  /* overflow: visible !important; */
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  @media screen and (min-width: 1440px) {
+    display: none !important;
+  }
+}
+/* .swiper-wrapper-workflow {
+  overflow: hidden;
+} */
+.workflow_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  @media screen and (min-width: 1440px) {
+    padding: 0 80px;
+  }
+}
+
+.swiper-slide-workflow {
+  border-radius: 16px;
+  /* overflow: hidden; */
+  display: flex;
+}
+
+.swiper-slide-workflow > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: pointer;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  width: 64px !important;
+  height: 64px;
+  user-select: none;
+
+  display: none !important;
+  @media screen and (min-width: 1440px) {
+    display: block !important;
+    position: relative !important;
+    user-select: none;
+  }
+}
+.swiper-pagination_workflow {
+  position: relative !important;
+  transform: translateY(30px) !important;
+  margin: 0 auto;
+  width: auto !important;
+  display: block;
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+.swiper-button-prev {
+  @media screen and (min-width: 1440px) {
+    transform: translateX(-20px);
+    /* left: 566px !important; */
+  }
+}
+
+.swiper-button-next {
+  @media screen and (min-width: 1440px) {
+    /* left: 650px !important; */
+  }
+}
+
+.swiper-button-prev > img,
+.swiper-button-next > img {
+  width: 56px !important;
+  height: 56px;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    pointer-events: auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex !important;
+  }
+}
+
+/* ______________ */
+
+.workflow_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  @media screen and (min-width: 1440px) {
+    padding: 0 80px;
+  }
+}
+.workflow_inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  display: none;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
+}
+.workflow_inner_item {
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @media screen and (min-width: 1440px) {
+    width: 306px;
+  }
+}
+.workflow_number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #ff8c00;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 40px;
+  color: #000;
+}
+.workflow_inner_title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
+}
+.workflow_inner_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  @media screen and (min-width: 1440px) {
+    font-size: 22px;
+  }
+}

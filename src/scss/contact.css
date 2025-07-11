@@ -1,0 +1,88 @@
+.contacts {
+  scroll-margin-top: 100px;
+}
+.contacts_container {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  @media screen and (min-width: 1440px) {
+    padding: 0 72px;
+    position: relative;
+  }
+}
+.contacts_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 37px;
+  }
+}
+.contacts_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contacts_title h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #21130a;
+  @media screen and (min-width: 1440px) {
+    font-size: 22px;
+  }
+}
+.contacts_tel_number {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: #21130a;
+  @media screen and (min-width: 1440px) {
+    font-size: 22px;
+  }
+}
+.contacts_tel_text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #21130a;
+}
+.contacts_mail_email {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: #21130a;
+  @media screen and (min-width: 1440px) {
+    font-size: 22px;
+  }
+}
+.contacts_calendar_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: #21130a;
+  @media screen and (min-width: 1440px) {
+    font-size: 22px;
+  }
+}
+.contacts_container_flexbox {
+  display: block;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.contacts_image {
+  width: 100%;
+  height: auto;
+  @media screen and (min-width: 1440px) {
+    width: 680px;
+    position: absolute;
+    top: -25px;
+    right: 50px;
+  }
+}
